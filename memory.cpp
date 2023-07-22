@@ -1,5 +1,5 @@
 // created by: https://github.com/faelcanalha
-#include "./bypass.h"
+#include "./memory.h"
 
 extern "C" NTSTATUS ZwReadVirtualMemory(HANDLE ProcessHandle, PVOID BaseAddress, PVOID Buffer, ULONG NumberOfBytesToRead, PULONG NumberOfBytesReaded);
 extern "C" NTSTATUS ZwWriteVirtualMemory(HANDLE ProcessHandle, PVOID BaseAddress, LPCVOID Buffer, SIZE_T BufferSize, PSIZE_T NumberOfBytesWritten);
